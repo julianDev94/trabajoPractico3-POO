@@ -46,8 +46,8 @@ class Producto{
     }
 
     imprimeDatos(){
+        document.write(`<h4>Producto</h4>`);
         document.write(`<ul>
-        <h4>Producto</h4>
         <li>${this.obtenerCodigo}</li>
         <li>${this.obtenerNombre}</li>
         <li>${this.obtenerPrecio}</li>
