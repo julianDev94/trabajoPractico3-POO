@@ -30,7 +30,7 @@ class Persona {
   }
 
   set nuevoNombre(nombre) {
-    if (nombre !== "") {
+    if (nombre !== '') {
       this.#_nombre = nombre;
     } else {
       alert("Ingrese un nombre por favor");
@@ -42,7 +42,7 @@ class Persona {
   }
 
   set nuevaEdad(edad) {
-    if (edad > 0) {
+    if (edad > 0 && Number.isInteger(edad)) {
       this.#_edad = edad;
     } else {
       alert("Ingrese una edad válida por favor");
@@ -157,16 +157,19 @@ class Persona {
     document.write(`<p>Fecha Nacimiento: ${this.obtenerAnioNac}</p>`); 
   }
 
-  generarDNI(){
-    let dniAleatorio = Math.floor(Math.random()*100000000);
-    if(dniAleatorio.length !== 8){
-        this.nuevoDNI = dniAleatorio;
-    }
+  
+}
+
+function generaDNI(){
+  let dniAleatorio = Math.floor(Math.random()*10000000);
+  if(dniAleatorio.length !== 8 && dniAleatorio <= 50000000){
+      return dniAleatorio;
   }
 }
 
+let dniAleat = generaDNI();
 
-const persona1 = new Persona('Julian', 29, dniPers , 'H', 72, 169, 1994);
+const persona1 = new Persona('Julian', 29, dniAleat , 'H', 72, 169, 1994);
 persona1.mostrarDatos();
 persona1.esMayorEdad();
 persona1.mostrarGeneracion();
