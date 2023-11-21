@@ -32,7 +32,7 @@ class Animal{
     }
 
     emitirSonido(){
-
+        document.write('<h4 class="text-primary">Soy animal</h4>');
     }
 }
 
