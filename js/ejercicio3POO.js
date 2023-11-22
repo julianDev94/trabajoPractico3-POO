@@ -46,8 +46,8 @@ const rectangulo2 = new Rectangulo(100, 70);
 
 rectangulo1.mostrarPropiedades();
 document.write(`<p class="text-center text-warning fs-2">El perimetro del rectangulo es: ${rectangulo1.calcularPerimetro()}</p>`);
-document.write(`<p class="text-center text-warning fs-2">El perimetro del rectangulo es: ${rectangulo1.calcularArea()}</p>`);
+document.write(`<p class="text-center text-warning fs-2">El área del rectangulo es: ${rectangulo1.calcularArea()}</p>`);
 
 rectangulo2.mostrarPropiedades();
 document.write(`<p class="text-center text-warning fs-2">El perimetro del rectangulo es: ${rectangulo2.calcularPerimetro()}</p>`);
-document.write(`<p class="text-center text-warning fs-2">El perimetro del rectangulo es: ${rectangulo2.calcularArea()}</p>`);
+document.write(`<p class="text-center text-warning fs-2">El área del rectangulo es: ${rectangulo2.calcularArea()}</p>`);
