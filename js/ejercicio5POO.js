@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Persona {
   #_nombre;
   #_edad;
@@ -173,3 +174,18 @@ const persona1 = new Persona('Julian', 29, dniAleat , 'H', 72, 169, 1994);
 persona1.mostrarDatos();
 persona1.esMayorEdad();
 persona1.mostrarGeneracion();
+=======
+class Persona{
+    constructor(nombreParam, edadParam, dniParam, sexoParam, pesoParam, alturaParam, anioNacParam){
+        this._nombre= nombreParam;
+        this._edad= edadParam;
+        this._dni= dniParam;
+        this._sexo= sexoParam;
+        this._peso= pesoParam;
+        this._altura= alturaParam;
+        this._anioNac= anioNacParam;
+    }
+
+    
+}
+>>>>>>> ejercicio4POO
